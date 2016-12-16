@@ -13,6 +13,8 @@
 		C06190271E039405001EB62E /* my_coredata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C06190251E039405001EB62E /* my_coredata.xcdatamodeld */; };
 		C06190291E039405001EB62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06190281E039405001EB62E /* Assets.xcassets */; };
 		C061902C1E039405001EB62E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C061902A1E039405001EB62E /* LaunchScreen.storyboard */; };
+		C06190351E03A25A001EB62E /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06190331E03A259001EB62E /* Users+CoreDataProperties.swift */; };
+		C06190361E03A25A001EB62E /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06190341E03A259001EB62E /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C06190281E039405001EB62E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C061902B1E039405001EB62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C061902D1E039405001EB62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C06190331E03A259001EB62E /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C06190341E03A259001EB62E /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		C06190121E039405001EB62E = {
 			isa = PBXGroup;
 			children = (
+				C06190331E03A259001EB62E /* Users+CoreDataProperties.swift */,
+				C06190341E03A259001EB62E /* Users.swift */,
 				C061901D1E039405001EB62E /* my-coredata */,
 				C061901C1E039405001EB62E /* Products */,
 			);
@@ -141,6 +147,8 @@
 			files = (
 				C06190211E039405001EB62E /* ViewController.swift in Sources */,
 				C06190271E039405001EB62E /* my_coredata.xcdatamodeld in Sources */,
+				C06190361E03A25A001EB62E /* Users.swift in Sources */,
+				C06190351E03A25A001EB62E /* Users+CoreDataProperties.swift in Sources */,
 				C061901F1E039405001EB62E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
