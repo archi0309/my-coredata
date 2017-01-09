@@ -17,10 +17,11 @@ class ViewController: UIViewController {
     let appDelegate  = UIApplication.sharedApplication().delegate as! AppDelegate
     let context  =  (appDelegate).managedObjectContext
     
-    let newUser = NSEntityDescription.insertNewObjectForEntityForName("Users", inManagedObjectContext: context)
+    let newUser = NSEntityDescription.insertNewObjectForEntityForName("User", inManagedObjectContext: context)
     
-    newUser.setValue("Yes", forKey: "username")
-    newUser.setValue("Bro", forKey: "password")
+    newUser.setValue("USER3", forKey: "name")
+    newUser.setValue(false, forKey: "gender")
+    newUser.setValue(1980, forKey: "year")
     /*
      * trying to  save image
      
@@ -32,7 +33,6 @@ class ViewController: UIViewController {
     
     
     do{
-      
       try! context.save()
       print("data saved")
     }catch let error as NSError {
@@ -43,21 +43,23 @@ class ViewController: UIViewController {
     //query data
     
     let request = NSFetchRequest()
-    let entity =  NSEntityDescription.entityForName("Users", inManagedObjectContext: context)
+    let entity =  NSEntityDescription.entityForName("User", inManagedObjectContext: context)
     
     request.entity = entity
     request.fetchBatchSize = 20
     
+    let  sportDesc1 = NSSortDescriptor(key:"name",ascending: false)
+    request.sortDescriptors = [sportDesc1]
+    
     do{
-      let result  = try! context.executeFetchRequest(request)
+      let results  = try! context.executeFetchRequest(request)
       
-      if(result.count > 0 ){
-        let user  = result[2] as! Users
-        print("================user name:\(user.username)")
-        print("================user password:\(user.password)")
-      }else{
-        print("no record found")
+      for managedObject in results {
+        if let name = managedObject.valueForKey("name"), year = managedObject.valueForKey("year") {
+          print("\(name) \(year)")
+        }
       }
+      
     }
     
     

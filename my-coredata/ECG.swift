@@ -1,16 +1,16 @@
 //
-//  Users.swift
+//  ECG.swift
 //  my-coredata
 //
-//  Created by Kochi Lin on 12/16/16.
-//  Copyright © 2016 Kochi Lin. All rights reserved.
+//  Created by Kochi Lin on 1/9/17.
+//  Copyright © 2017 Kochi Lin. All rights reserved.
 //
 
 import Foundation
 import CoreData
 
 
-class Users: NSManagedObject {
+class ECG: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 

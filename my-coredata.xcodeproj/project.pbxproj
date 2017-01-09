@@ -8,26 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		C061901F1E039405001EB62E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061901E1E039405001EB62E /* AppDelegate.swift */; };
-		C06190211E039405001EB62E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06190201E039405001EB62E /* ViewController.swift */; };
 		C06190241E039405001EB62E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06190221E039405001EB62E /* Main.storyboard */; };
-		C06190271E039405001EB62E /* my_coredata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C06190251E039405001EB62E /* my_coredata.xcdatamodeld */; };
 		C06190291E039405001EB62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06190281E039405001EB62E /* Assets.xcassets */; };
 		C061902C1E039405001EB62E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C061902A1E039405001EB62E /* LaunchScreen.storyboard */; };
-		C06190351E03A25A001EB62E /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06190331E03A259001EB62E /* Users+CoreDataProperties.swift */; };
-		C06190361E03A25A001EB62E /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06190341E03A259001EB62E /* Users.swift */; };
+		C0E6885B1E23321A00C13528 /* my_coredata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0E688591E23321A00C13528 /* my_coredata.xcdatamodeld */; };
+		C0E688611E23323600C13528 /* ECG+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E6885D1E23323600C13528 /* ECG+CoreDataProperties.swift */; };
+		C0E688621E23323600C13528 /* ECG.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E6885E1E23323600C13528 /* ECG.swift */; };
+		C0E688631E23323600C13528 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E6885F1E23323600C13528 /* Users+CoreDataProperties.swift */; };
+		C0E688641E23323600C13528 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E688601E23323600C13528 /* Users.swift */; };
+		C0E688661E23324800C13528 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E688651E23324800C13528 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C061901B1E039405001EB62E /* my-coredata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-coredata.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C061901E1E039405001EB62E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C06190201E039405001EB62E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C06190231E039405001EB62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C06190261E039405001EB62E /* my_coredata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = my_coredata.xcdatamodel; sourceTree = "<group>"; };
 		C06190281E039405001EB62E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C061902B1E039405001EB62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C061902D1E039405001EB62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C06190331E03A259001EB62E /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C06190341E03A259001EB62E /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		C0E6885A1E23321A00C13528 /* my_coredata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = my_coredata.xcdatamodel; sourceTree = "<group>"; };
+		C0E6885D1E23323600C13528 /* ECG+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ECG+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C0E6885E1E23323600C13528 /* ECG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECG.swift; sourceTree = "<group>"; };
+		C0E6885F1E23323600C13528 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C0E688601E23323600C13528 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		C0E688651E23324800C13528 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +48,6 @@
 		C06190121E039405001EB62E = {
 			isa = PBXGroup;
 			children = (
-				C06190331E03A259001EB62E /* Users+CoreDataProperties.swift */,
-				C06190341E03A259001EB62E /* Users.swift */,
 				C061901D1E039405001EB62E /* my-coredata */,
 				C061901C1E039405001EB62E /* Products */,
 			);
@@ -62,15 +64,27 @@
 		C061901D1E039405001EB62E /* my-coredata */ = {
 			isa = PBXGroup;
 			children = (
+				C0E6885C1E23322400C13528 /* model */,
+				C0E688591E23321A00C13528 /* my_coredata.xcdatamodeld */,
+				C0E688651E23324800C13528 /* ViewController.swift */,
 				C061901E1E039405001EB62E /* AppDelegate.swift */,
-				C06190201E039405001EB62E /* ViewController.swift */,
 				C06190221E039405001EB62E /* Main.storyboard */,
 				C06190281E039405001EB62E /* Assets.xcassets */,
 				C061902A1E039405001EB62E /* LaunchScreen.storyboard */,
 				C061902D1E039405001EB62E /* Info.plist */,
-				C06190251E039405001EB62E /* my_coredata.xcdatamodeld */,
 			);
 			path = "my-coredata";
+			sourceTree = "<group>";
+		};
+		C0E6885C1E23322400C13528 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C0E6885D1E23323600C13528 /* ECG+CoreDataProperties.swift */,
+				C0E6885E1E23323600C13528 /* ECG.swift */,
+				C0E6885F1E23323600C13528 /* Users+CoreDataProperties.swift */,
+				C0E688601E23323600C13528 /* Users.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,11 +159,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C06190211E039405001EB62E /* ViewController.swift in Sources */,
-				C06190271E039405001EB62E /* my_coredata.xcdatamodeld in Sources */,
-				C06190361E03A25A001EB62E /* Users.swift in Sources */,
-				C06190351E03A25A001EB62E /* Users+CoreDataProperties.swift in Sources */,
+				C0E688621E23323600C13528 /* ECG.swift in Sources */,
+				C0E688611E23323600C13528 /* ECG+CoreDataProperties.swift in Sources */,
+				C0E6885B1E23321A00C13528 /* my_coredata.xcdatamodeld in Sources */,
+				C0E688631E23323600C13528 /* Users+CoreDataProperties.swift in Sources */,
+				C0E688661E23324800C13528 /* ViewController.swift in Sources */,
 				C061901F1E039405001EB62E /* AppDelegate.swift in Sources */,
+				C0E688641E23323600C13528 /* Users.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "my-coredata/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kitrev.my-coredata";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "my-coredata/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kitrev.my-coredata";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,16 +317,17 @@
 				C06190321E039405001EB62E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C06190251E039405001EB62E /* my_coredata.xcdatamodeld */ = {
+		C0E688591E23321A00C13528 /* my_coredata.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C06190261E039405001EB62E /* my_coredata.xcdatamodel */,
+				C0E6885A1E23321A00C13528 /* my_coredata.xcdatamodel */,
 			);
-			currentVersion = C06190261E039405001EB62E /* my_coredata.xcdatamodel */;
+			currentVersion = C0E6885A1E23321A00C13528 /* my_coredata.xcdatamodel */;
 			path = my_coredata.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
