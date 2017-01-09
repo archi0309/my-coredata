@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 class ViewController: UIViewController {
+  @IBOutlet weak var img_avatar: UIImageView!
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -22,20 +23,18 @@ class ViewController: UIViewController {
     newUser.setValue("USER3", forKey: "name")
     newUser.setValue(false, forKey: "gender")
     newUser.setValue(1980, forKey: "year")
-    /*
-     * trying to  save image
-     
-     let imgPNG = UIImage(named:"my-test.png")
-     let imgdata  = UIImagePNGRepresentation(imgPNG!)
-     //avata must be "binary data" attribute
-     newUser.setValue(imgdata, forKey: "avata")
-     */
+    
+    let imgPNG = UIImage(named:"my-test.png")
+    let imgdata  = UIImagePNGRepresentation(imgPNG!)
+    //avata must be "binary data" attribute
+    newUser.setValue(imgdata, forKey: "avatar")
     
     
     do{
       try! context.save()
       print("data saved")
-    }catch let error as NSError {
+    }catch {
+      let error = error as NSError
       print(" error during saving data")
       print(error)
     }
@@ -55,8 +54,11 @@ class ViewController: UIViewController {
       let results  = try! context.executeFetchRequest(request)
       
       for managedObject in results {
-        if let name = managedObject.valueForKey("name"), year = managedObject.valueForKey("year") {
+        if let name = managedObject.valueForKey("name"), year = managedObject.valueForKey("year"),avatar = managedObject.valueForKey("avatar") {
           print("\(name) \(year)")
+          
+          img_avatar.image = UIImage(data: avatar as! NSData)
+          
         }
       }
       
